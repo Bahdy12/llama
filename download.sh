@@ -7,7 +7,12 @@ set -e
 
 read -p "https://download.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoicmd6dmlkcHpka2o0dzc1cmswMWduNm1qIiwiUmVzb3VyY2UiOiJodHRwczpcL1wvZG93bmxvYWQubGxhbWFtZXRhLm5ldFwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwNzIwMTE0MH19fV19&Signature=uMQQ0AdocvYxmkEbEVytxbyJPQgi9Ne81YVZHvvNMb5xfKawn09x-Qb6WAPzz5zmj14MQAlgmbIGO2mD9g6pli16qxQuB2tSvH5Ob6ozhNi2C8%7EdWGFqq%7E-h-HeivUths%7EHi9U9cvn27qohebVObfzJCfj7ceDbKtQ7NKHx6DXQiGrbQAeBqbGR22USRGsh7Ar9WOJTFizjcJHFYuq5soZ99yrSnzr00ho-d8FLam40tfBwWE0Exgyj-N36CedWeeIO2f-5-eqAhrMgwtODIbBvueBCaGOwZUuHBL0q5CqXp9lDXz%7ESfOPmIsZZTnDKafpUmJhKw-%7EWz6MNez-X0mg__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=736566705107307" PRESIGNED_URL
 echo ""
-read -p "Enter the list of models to download without spaces (7B,13B,70B,7B-chat,13B-chat,70B-chat), or press Enter for all: " MODEL_SIZE
+read -p "Llama-2-7b
+Llama-2-7b-chat
+Llama-2-13b
+Llama-2-13b-chat
+Llama-2-70b
+Llama-2-70b-chat" MODEL_SIZE
 TARGET_FOLDER="."             # where all files should end up
 mkdir -p ${TARGET_FOLDER}
 
